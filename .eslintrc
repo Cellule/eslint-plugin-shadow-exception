@@ -1,0 +1,32 @@
+{
+  "env": {
+    "node": true
+  },
+  "rules": {
+    // First number is error level 0: ignore, 1: warning, 2: error
+    // Second is option ie: [1, "double"] = Warn using double option
+    // Code style
+    "camelcase": 1,
+    "curly": [2, "all"],
+    "indent": [2, 2],
+    "no-else-return": 2,
+    "no-eq-null": 2,
+    "no-self-compare": 2,
+    "no-throw-literal": 2,
+    "no-unused-vars": [2, {"args": "after-used"}],
+    "quotes": [2, "double"],
+    "wrap-iife": [2, "outside"],
+    "yoda": [2, "never", { "exceptRange": true }],
+    "space-infix-ops": 2,
+    "no-new": 1,
+    // Allow multi spaces for variable declaration (alignement)
+    "no-multi-spaces": [2, { "exceptions": { "VariableDeclarator": true } }],
+
+    // Disable default options
+    "comma-dangle": 0,
+    "consistent-return": 0,
+    "no-mixed-requires": 0,
+    "no-underscore-dangle": 0,
+    "strict": 0
+  }
+}
