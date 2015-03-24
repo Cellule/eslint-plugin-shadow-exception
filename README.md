@@ -1,12 +1,12 @@
-#ESLint-plugin-shadow-exception
+# ESLint-plugin-shadow-exception
 
-##Description
+## Description
 This plugin allows you to have the ESLint rule `no-shadow` with a whitelist of variable names.
 While it is highly encouraged to not shadow any variables, I believe it is better to allow some exception than to force developpers to plainly disable the rule if they have some cases where they don't care.
 
 You can see an interesting discussion about this on [ESLint #1613](https://github.com/eslint/eslint/issues/1613)
 
-##Installation
+## Installation
 Install [ESLint](https://github.com/eslint/eslint) either locally or globally
 ```bash
 $ npm install eslint
@@ -16,7 +16,7 @@ The plugin must be installed globally if ESLint is installed globally too.
 $ npm install eslint-plugin-shadow-exception
 ```
 
-##Configuration
+## Configuration
 Add `plugins` sections and specify ESLint-plugin-shadow-exception as a plugin.
 ```js
 {
@@ -32,9 +32,7 @@ Then configure the rule. Note you must disable ESLint "no-shadow" rule.
     "shadow-exception/no-shadow": [2, {
       //default values
       "exceptions": {
-        "err": true,
-        "res": true,
-        "callback": true
+        "err": true
       }
     }],
     "no-shadow": 0
