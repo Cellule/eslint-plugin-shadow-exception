@@ -7,6 +7,8 @@ var linter = require("eslint").linter,
 eslintTester.addRuleTest("lib/noShadow", {
   valid: [
     "var err = null; function test(err) { return err; }",
+    "var res = null; function test(res) { return res; }",
+    "var callback = null; function test(callback) { return callback; }",
     {
       code: "var randomName = null; function test(randomName) { var randomName = 14; return randomName; }",
       args: [2, {exceptions: {randomName: true}}],
