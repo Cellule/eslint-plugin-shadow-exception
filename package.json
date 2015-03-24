@@ -1,11 +1,15 @@
 {
   "name": "eslint-plugin-shadow-exception",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows to set a whitelist of variable names that you can shadow for ESLint \"no-shadow\"",
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js",
     "lint": "eslint index.js test.js lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cellule/eslint-plugin-shadow-exception"
   },
   "author": "Michael Ferris",
   "keywords": [
