@@ -41,5 +41,6 @@ Then configure the rule. Note you must disable ESLint "no-shadow" rule.
   }
 }
 ```
-`"err": false` will forbid shadowing of variables named `err`
+`"err": false` will forbid shadowing of variables named `err`.
+
 The options is structured this way so you can overwrite/add variable names depending on the location of your .eslintrc
