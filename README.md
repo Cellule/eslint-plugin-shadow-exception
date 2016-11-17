@@ -1,3 +1,5 @@
+## *This plugin is deprecated because this is now supported in eslint core: http://eslint.org/docs/rules/no-shadow#allow*
+
 # ESLint-plugin-shadow-exception
 
 ## Description
